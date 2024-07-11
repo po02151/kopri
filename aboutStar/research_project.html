@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>연구사업</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/9087f21017.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <link rel="stylesheet" href="../assets/css/import.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="active">
+            <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
+            <div class="header_pc">
+                <h1>
+                    <a href="../index.html">
+                        logo
+                    </a>
+                </h1>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../aboutStar/greeting.html">STAR소개</a>
+                                <ul class="sub_menu sub_menu_1">
+                                    <li>
+                                        <a href="../aboutStar/greeting.html">인사말</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/research_project.html">연구사업</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/organization.html">조직안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/directions.html">찾아오시는 길</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../starNews/sea_ice_information.html">STAR소식</a>
+                                <ul class="sub_menu sub_menu_2">
+                                    <li>
+                                        <a href="../starNews/sea_ice_information.html">남북극 해빙정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/science_base.html">과학기지현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/star_news.html">극지소식</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/polar_news.html">보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/thesis_performance.html">논문성과</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/photo_album.html">사진첩</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../remoteSensing/seaColor_remoteSensing.html">원격탐사</a>
+                                <ul class="sub_menu sub_menu_3">
+                                    <li>
+                                        <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../polarObservation/star_system.html">극지관측</a>
+                                <ul class="sub_menu sub_menu_4">
+                                    <li>
+                                        <a href="../polarObservation/star_system.html">STAR 시스템</a>
+                                    </li>
+                                    <li>
+                                        <a href="../polarObservation/drone.html">무인기</a>
+                                    </li>
+                                    <li>
+                                        <a href="../polarObservation/fieldObservationEquipment.html">현장관측장비</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../relatedSites/business_group.html">관련사이트</a>
+                                <ul class="sub_menu sub_menu_5">
+                                    <li>
+                                        <a href="../relatedSites/business_group.html">사업단</a>
+                                    </li>
+                                    <li>
+                                        <a href="../relatedSites/related_organizations.html">관련기관</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button></button>
+                            <div>
+                                <span>KR</span>
+                                <span>EN</span>
+                            </div>
+                        </div>
+                        <a href="../etc/siteMap.html" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- 모바일 헤더 : 스크롤 시 top이라는 클래스가 붙은 div에 active클래스 추가. -->
+            <!-- hamburger 버튼 클릭 시 header_mo에 active클래스 추가. -->
+            <div class="header_mo">
+                <div class="top active">
+                    <h1>
+                        <a href="../index.html">
+                            logo
+                        </a>
+                    </h1>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>
+                                <span>STAR소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../aboutStar/greeting.html">인사말</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/research_project.html">연구사업</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/organization.html">조직안내</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/directions.html">찾아오시는 길</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>STAR소식</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../starNews/sea_ice_information.html">남북극 해빙정보</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/science_base.html">과학기지현황</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/star_news.html">극지소식</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/polar_news.html">보도자료</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/thesis_performance.html">논문성과</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/photo_album.html">사진첩</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>원격탐사</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>극지관측</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../polarObservation/star_system.html">STAR 시스템</a>
+                                </li>
+                                <li>
+                                    <a href="../polarObservation/drone.html">무인기</a>
+                                </li>
+                                <li>
+                                    <a href="../polarObservation/fieldObservationEquipment.html">현장관측장비</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>관련사이트</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../relatedSites/business_group.html">사업단</a>
+                                </li>
+                                <li>
+                                    <a href="../relatedSites/related_organizations.html">관련기관</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button class="langBtn_ko active">KO</button>
+                            <button class="langBtn_en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header Fin -->
+
+        
+        <div class="subPage aboutStar research_project">
+            <div class="banner" style="background-image: url('../assets/images/aboutStar_banner.png');">
+                <div class="titleBox">
+                    <h2>
+                        <span>STAR소개</span>
+                        극지 환경 변화의 첨단 감시자로서 극지의 오늘과 내일을 지킵니다.
+                    </h2>
+                </div>
+            </div>
+
+            <div class="lnb">
+                <div>
+                    <ul class="left">
+                        <li>
+                            <a href="../aboutStar/greeting.html">인사말</a>
+                        </li>
+                        <li class="active">
+                            <a href="../aboutStar/research_project.html">연구사업</a>
+                        </li>
+                        <li>
+                            <a href="../aboutStar/organization.html">조직안내</a>
+                        </li>
+                        <li>
+                            <a href="../aboutStar/directions.html">찾아오시는 길</a>
+                        </li>
+                    </ul>
+                    <ul class="right">
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="../aboutStar/greeting.html">STAR소개</a>
+                        </li>
+                        <li>
+                            <a href="../aboutStar/research_project.html">연구사업</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="section_1">
+                <h3>
+                    <span>연구사업</span>
+                    무인관측과 수치모델링을 통해 북극 해빙과 기후 변화를 예측합니다.
+                </h3>
+
+                <ul class="contentWrap accordionBox">
+                    <li>
+                        <div class="titleBox active">
+							<p>북극 빙권  변화 파악을 위한 원격탐사 산출물 개발</p>
+							<i class="fa-solid fa-arrow-down"></i>
+						</div>
+                        <div class="contentBox">
+                            <dl>
+                                <dt class="check_square">연구사업 개요</dt>
+                                <dd class="listStyle">북극해빙의 감소 및 영구동토 용해로 세계적인 이상 기후 현상 발생</dd>
+                                <dd class="listStyle">인공위성 원격탐사 기반의 관측은 북극 빙권의 광범위한 변화를 모니터링하기에 적합하나, 산출물의 종류나 정량화가 제한적이므로, 극지연구소 자체로 생산하는 정기적인 산출물 개발 필요</dd>
+                                <dd class="listStyle">기후/환경 변화에 적극적으로 대응하기 위해서는 관측과 예측이 연계되어야 하며, 기후 모델에 직접 접목시킬 수 있는 원격탐사 산출물의 개발, 생산, 활용이 필수</dd>
+                                <dd class="listStyle">위성/무인기를 활용한 빙권 특성을 정량화하는 산출물을 개발하고 시공간적 변화와 기후요소와의 상호 영향을 분석함으로써, 다가올 북극 개척 시대에 선제적 대응</dd>
+                            </dl>
+                            <dl>
+                                <dt class="check_square">주요 연구내용</dt>
+                                <dd class="listStyle">해빙 특성 관측 정량화 및 시공간적 변화 양상 분석</dd>
+                                <dd class="listStyle">무인기와 위성 자료 활용 동토 변화 관측</dd>
+                                <dd class="listStyle">온난화에 따른 북극 빙권 변화 특성 이해 및 변화량 산정</dd>
+                            </dl>
+
+                            <div class="imgWrap">
+                                <div class="imgBox">
+                                    <span class="circle">해빙 이동 벡터장과 누적 변형 산출</span>
+                                    <img src="/assets/images/research_project_tab_1.png" alt="해빙 이동 벡터장과 누적 변형 산출">
+                                </div>
+                                <div class="imgBox">
+                                    <span class="circle">머신러닝을 통한 해빙 두께 산출 기법 개발</span>
+                                    <img src="/assets/images/research_project_tab_2.png" alt="머신러닝을 통한 해빙 두께 산출 기법 개발">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="titleBox">
+                            <p>극지 운항 관리를 위한 위성 데이터 기반 해빙 분포 관측 및 분석</p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="contentBox">
+                            <dl>
+                                <dt class="check_square">연구사업 개요</dt>
+                                <dd class="listStyle">기후변화로 인한 북극 온난화로 인한 북극항로 수요 폭증에 대비하기 위하여 운항 지원을 위한 해빙 자료 생산 시스템 구축과 고도화</dd>
+                            </dl>
+                            <dl>
+                                <dt class="check_square">주요 연구내용</dt>
+                                <dd class="listStyle">
+                                    영상레이더 자료 처리 기반 해빙유형 자동 분류 기술 개발
+                                    <div>
+                                        <span>영상레이더 기반 해빙 유형 분류 기술 개발</span>
+                                        <span>고해상도 영상레이더 기반 해빙 유형 자동 분류</span>
+                                    </div>
+                                </dd>
+                                <dd class="listStyle">
+                                    다중편파 영상레이더 산란모델 및 편파분석 기술을 활용한 해빙 강도 추정 알고리즘 개발
+                                    <div>
+                                        <span>영상레이더 다중 편파 신호 분석</span>
+                                        <span>해빙강도 추정 알고리즘 개발</span>
+                                    </div>
+                                </dd>
+                            </dl>
+
+                            <div class="imgWrap">
+                                <div class="imgBox">
+                                    <span class="circle">해빙 유형 분류 산출물 생산</span>
+                                    <img src="../assets/images/research_project_tab_3.png" alt="해빙 유형 분류 산출물 생산">
+                                </div>
+                                <div class="imgBox">
+                                    <span class="circle">해빙 강도 추정 산출물 생산</span>
+                                    <img src="../assets/images/research_project_tab_4.png" alt="해빙 강도 추정 산출물 생산">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="titleBox">
+                            <p>무인기 획득 영상 기반 빙하 모니터링 기술 연구</p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="contentBox">
+                            <dl>
+                                <dt class="check_square">연구사업 개요</dt>
+                                <dd class="listStyle">극지 관측에 효율적인 무인이동체 기반으로 획득된 고해상도 영상과 인공위성 데이터를 복합 활용한 그린란드 비항 융합 관측을 통한 정밀 관측 수행</dd>
+                                <dd class="listStyle">기후변화로 인한 급격한 융빙의 대표적 사례인 그린란드 빙하를 관측하여 모니터링 기술 습득, 고도화</dd>
+                            </dl>
+                            <dl>
+                                <dt class="check_square">주요 연구내용</dt>
+                                <dd class="listStyle">
+                                    그린란드 현지 하계 조건 현장 조사 공동 수행
+                                    <div>
+                                        <span>그린란드 Kangerlussuaq 인근 빙하 지역에 대한 하계 무인기 영상 획득 계획 수립</span>
+                                        <span>무인기 획득 자료의 검보정 자료로 활용을 위해 무인기 영상 획득과 동시기에 현장 관측 수행</span>
+                                        <span>그린란드 연구 대상 지역에 대한 하계 무인기 영상 획득 수행</span>
+                                    </div>
+                                </dd>
+                                <dd class="listStyle">
+                                    극지 실증시연 취득 데이터 분석·활용 및 기존 위성 데이터와 비교 연구
+                                    <div>
+                                        <span>다중시점 무인기 획득 영상 분석을 통한 빙하 지역 수치고도모델 추출</span>
+                                        <span>현장 조사와 동시기에 인공위성 데이터 획득</span>
+                                        <span>인공위성 기반 빙하 지역 수치고도모델과 무인기 기반 빙하 지역 수치고도모델의 비교 분석</span>
+                                    </div>
+                                </dd>
+                                <dd class="listStyle">
+                                    극지환경 모사시험
+                                    <div>
+                                        <span>국내 겨울철 강설환경에서의 극지환경 모사시험을 통해 획득된 무인기 영상 자료를 활용하여 지표면 특성 및 지형 분석 연구 수행</span>
+                                    </div>
+                                </dd>
+                            </dl>
+
+                            <div class="imgWrap">
+                                <div class="imgBox">
+                                    <span class="circle">무인기 관측 영상 모자이크를 통한 빙하 모니터링 이미지 생성</span>
+                                    <img src="../assets/images/research_project_tab_5.png" alt="무인기 관측 영상 모자이크를 통한 빙하 모니터링 이미지 생성">
+                                </div>
+                                <div class="imgBox">
+                                    <span class="circle">무인기 관측(파란선)과 과거 위성 관측(노란선)을 비교하여 빙하 후퇴 현황 파악</span>
+                                    <img src="../assets/images/research_project_tab_6.png" alt="무인기 관측(파란선)과 과거 위성 관측(노란선)을 비교하여 빙하 후퇴 현황 파악">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div  class="titleBox">
+                            <p>극지 기후변화 대응을 위한 위성정보활용 고도화 및 큐브위성개발 기획</p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="contentBox">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt class="check_square">비전</dt>
+                                        <dd class="listStyle">큐브위성의 전주기적 극지해빙관측을 통한 독자적 기후변화 예측능력 확보</dd>
+                                        <dd class="listStyle">위성을 활용한 극지해빙관측 기술 자립화</dd>
+                                        <dd class="listStyle">군집위성 운용기술 경쟁력 확보</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class="check_square">목표</dt>
+                                        <dd class="listStyle">
+                                            <span>산업:</span>
+                                            큐브위성 개발 및 위성영상 활용, 산업 활성화 기반 구축
+                                        </dd>
+                                        <dd class="listStyle">
+                                            <span>정책:</span>
+                                            극지관측 정보를 국가 기후변화 예측의 전략적 자산으로 활용
+                                        </dd>
+                                        <dd class="listStyle">
+                                            <span>산업:</span>
+                                            큐브위성 군집운용 기술 및 극지관측 자료처리 · 분석 기술 확보
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class="check_square">세부사업</dt>
+                                        <dd class="listStyle">수동마이크로파 및 정밀광학 극지 관측 큐브위성 개발 및 운용</dd>
+                                        <dd class="listStyle">극지관측 전용 위성센터 기능확장 및 실용화</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class="check_square">추진전략</dt>
+                                        <dd class="listStyle">전주기적 극지관측 데이터 확보 및 극지 외 지역 산출물 생성</dd>
+                                        <dd class="listStyle">신속 · 정확한 극지관측 데이터 분석</dd>
+                                        <dd class="listStyle">기후변화 감시를 위한 준실시간 예측모델 입력자료 제공</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <p>극지관측 큐브위성 개발 및 기후변화 예측기술 개선 사업 목표 체계</p>
+
+                            <dl>
+                                <dt>산업관점</dt>
+                                <dd class="listStyle">
+                                    <span>전략목표: </span>
+                                    큐브위성 및 재해 · 재난 대응분야 산업 활성화 기반 구축
+                                </dd>
+                                <dd class="listStyle">
+                                    <span>성과목표: </span>
+                                    큐브위성 개발 및 용 분야 산업규모 확대
+                                </dd>
+                                <dd class="listStyle">
+                                    <span>성과지표: </span>
+                                    위성개발, 발사 및 운용 기술 100% 국내 조달
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>정책관점</dt>
+                                <dd class="listStyle">
+                                    <span>전략목표: </span>
+                                    극지관측 정보를 국가 기후변화 예측의 전략적 자산으로 활용
+                                </dd>
+                                <dd class="listStyle">
+                                    <span>성과목표: </span>
+                                    위성정보를 활용하여 기후변화 대응을 위한 국제 공동 연구 수행
+                                </dd>
+                                <dd class="listStyle">
+                                    <span>성과지표: </span>
+                                    위성정보를 활용한 기후변화 예측 연구사업의 국제협력 비중 50% 이상
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>과학 · 기술 관점</dt>
+                                <dd class="listStyle">
+                                    <span>전략목표</span>
+                                    위성 원격탐사 기술 고도화 및 한반도 겨울철 이상기후 ( 한파, 이상고온 ) 예측기술 개선
+                                </dd>
+                                <dd class="listStyle">
+                                    <span>성과목표: </span>
+                                    큐브위성 본체 및 탑재체 자체개발 기술 고도화
+                                </dd>
+                                <dd class="listStyle">
+                                    <span>성과지표: </span>
+                                    큐브위성 본체 및 탑재체 기술 세계 80% 수준
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- content Fin -->
+        
+        <footer>
+            <div>
+                <button class="topBtn"></button>
+                <div>
+                    <a href="../index.html"></a>
+                </div>
+                <div>
+                    <p>
+                        <span>ADD</span>
+                        인천광역시 연수구 송도미래로 26 (송도동 213-3) 극지연구소
+                    </p>
+                    <div>
+                        <p>
+                            <span>TEL</span>
+                            032-760-5380
+                        </p>
+                        <p>
+                            <span>E-mail</span>
+                            star@kopri.re.kr
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p>COPYRIGHT (C) POLAR REMOTE SENSING ALL RIGHT RESERVED</p>
+                    <ul>
+                        <li class="youtube">
+                            <span></span>
+                        </li>
+                        <li class="facebook">
+                            <span></span>
+                        </li>
+                        <li class="twitter">
+                            <span></span>
+                        </li>
+                        <li class="instagram">
+                            <span></span>
+                        </li>
+                        <li class="blog">
+                            <span></span>
+                        </li>
+                        <li class="naver">
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

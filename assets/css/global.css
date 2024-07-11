@@ -1,0 +1,156 @@
+*{font-family: 'pretendard';}
+button{cursor: pointer;}
+.header_mo{display: none;}
+body.active{overflow: hidden;}
+
+.header_pc,
+footer > div{width: 1480px; margin: 0 auto;}
+
+header{position: fixed; left: 0; top: 0; width: 100%; z-index: 9999; transition: all 0.3s; box-shadow: rgb(255 255 255 / 0.2) 3px 3px 3px 1px;}
+.header_pc{display: flex;}
+.header_pc h1{cursor: pointer; width: 16.9%;}
+.header_pc h1 a{display: block; height: 90px; text-indent: -9999px; display: block; background: url('../../assets/images/kopri_logo.png') center / contain no-repeat; max-width: 252px; width: 100%;}
+.header_pc > div{width: 83.1%; display: flex; height: 90px; align-items: center;}
+.header_pc nav{width: 88.62%;}
+.header_pc nav > ul{display: flex; justify-content: right; padding-right: 3.65%; box-sizing: border-box;}
+.header_pc nav > ul > li{position: relative;}
+.header_pc nav > ul > li:not(:first-child){margin-left: 6.09%;}
+.header_pc nav > ul > li > a{cursor: pointer; text-decoration: none; display: block; line-height: 90px; font-size: 19px; font-weight: 500; color: #FFFFFF;}
+.header_pc nav > ul > li:hover > a,
+.header_pc nav > ul > li.active > a{color: #C22C02;}
+.header_pc nav > ul > li > .sub_menu{padding: 12px 0; border-radius: 5px; transition: opacity 0.3s ease-out; background-color: #fff; top: 80px; left: 50%; transform: translateX(-50%); position: absolute; visibility: hidden; opacity: 0;}
+.header_pc nav > ul > li > .sub_menu > li > a{cursor: pointer;  line-height: 20px; font-size: 17px; font-weight: 400; color: #555555; text-decoration: none; display: block; padding: 6px 30px;}
+.header_pc nav > ul > li > .sub_menu > li > a:hover{font-weight: 500; color: #444444; text-decoration: underline;}
+.header_pc nav > ul > li > .sub_menu_1{width: 155px;}
+.header_pc nav > ul > li > .sub_menu_2{width: 170px;}
+.header_pc nav > ul > li > .sub_menu_3{width: 200px;}
+.header_pc nav > ul > li > .sub_menu_4{width: 200px;}
+.header_pc nav > ul > li > .sub_menu_5{width: 155px;}
+.header_pc nav > ul > li:hover > a + .sub_menu{visibility: visible; opacity: 1;}
+.header_pc .rightBox{width: 11.38%; display: flex; align-items: center; justify-content: right;}
+.header_pc .rightBox .langBox{position: relative;}
+.header_pc .rightBox .langBox button{background: url('../../assets/images/langBtn.png') center / contain no-repeat; width: 20px; height: 20px; border: none; padding: 0;}
+.header_pc .rightBox .langBox button.active + div{display: block;}
+.header_pc .rightBox .langBox > div{box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); display: none; border-radius: 5px; background-color: #fff; position: absolute; left: 50%; top: 35px; transform: translate(-50%);}
+.header_pc .rightBox .langBox > div span{cursor: pointer; position: relative; font-size: 14px; font-weight: 500; color: #999999; display: inline-block; padding: 10px 20px;}
+.header_pc .rightBox .langBox > div span.active{color: #326EC8;}
+.header_pc .rightBox .langBox > div span:first-child:after{content: ''; display: block; width: 12px; height: 1px; background-color: #DDDDDD; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);}
+
+
+/* 햄버거 버튼 */
+.header_pc .hamburger{margin-left: 45px; cursor: pointer; background-color: transparent; border: none; padding: 0; width: 18px; display: block;}
+.header_pc .hamburger span{display: block; width: 18px; border-bottom: 2px solid #fff; transition: all 0.4s;}
+.header_pc .hamburger span:not(:last-child){margin-bottom: 4px;}
+.header_pc.active .hamburger span{border-color: #256DCB;}
+.header_pc.active .hamburger span:nth-child(1){transform: translateY(2px) rotate(45deg);}
+.header_pc.active .hamburger span:nth-child(3){transform: translateY(-4px) rotate(-45deg);}
+.header_pc.active .hamburger span:nth-child(2){display: none;}   
+/* 햄버거 버튼 */
+
+header.active,
+header:hover{background-color: #fff;}
+header.active .header_pc .rightBox .langBox button,
+header:hover .header_pc .rightBox .langBox button{background-image: url('../../assets/images/lang_active.png');}
+header.active .header_pc h1 a,
+header:hover .header_pc h1 a{background-image: url('../../assets/images/kopri_logo_active.png');}
+header.active .header_pc nav > ul > li > a,
+header:hover .header_pc nav > ul > li > a{color: #444444;}
+header.active .header_pc .hamburger span,
+header:hover .header_pc .hamburger span{border-color: #777777;}
+header.active .header_pc nav > ul > li:hover > a,
+header.active .header_pc nav > ul > li.active > a,
+header:hover .header_pc nav > ul > li:hover > a,
+header:hover .header_pc nav > ul > li.active > a{color: #C22C02;}
+
+
+/* 모바일 햄버거 버튼 */
+.header_mo .hamburger{cursor: pointer; background-color: transparent; border: none; padding: 0; width: 20px; display: block; position: fixed; top: 38px; right: 6%;}
+.header_mo .hamburger span{display: block; width: 20px; border-bottom: 3px solid #fff; transition: all 0.4s;}
+.header_mo .hamburger span:not(:last-child){margin-bottom: 4px;}
+.header_mo.active .hamburger span{border-color: #1F4E79;}
+.header_mo.active .hamburger span:nth-child(1){transform: translateY(8px) rotate(45deg);}
+.header_mo.active .hamburger span:nth-child(3){transform: translateY(1px) rotate(-45deg);}
+.header_mo.active .hamburger span:nth-child(2){display: none;}   
+/* 모바일 햄버거 버튼 Fin */
+
+.header_mo{position: fixed; height: 95px; width: 100%; left: 0; top: 0; z-index: 999; font-family: 'pretendard'; padding: 0 5%; box-sizing: border-box;}
+.header_mo.active{height: 100%;}
+.header_mo .top{left: 0; top: 0; display: flex; align-items: center; padding: 0 5%; justify-content: space-between; position: fixed; width: 100%; height: 95px;}
+.header_mo .top h1 a{display: block; height: 95px; text-indent: -9999px; display: block; background: url('../../assets/images/kopri_logo.png') center / contain no-repeat; width: 100%; min-width: 252px;}
+.header_mo .nav{position: fixed; width: 100%; height: calc(100% - 80px); top: 80px; left: 0;}
+.header_mo .nav{display: none; padding: 0 5%; box-sizing: border-box; height: calc(100% - 75px); overflow-y: auto; overflow-x: hidden;}
+.header_mo.active .nav{display: block;}
+.header_mo .nav > ul{margin-top: 30px; padding-bottom: 30px;}
+.header_mo .nav > ul li span{cursor: pointer; line-height: 50px; font-size: 17px; font-weight: 500; text-decoration: none;}    
+.header_mo .nav > ul > li:not(:last-child){border-bottom: 1px solid #EEEEEE;}
+.header_mo .nav > ul > li > span{color: #1F4E79; display: block; position: relative;}
+.header_mo .nav > ul > li > span.active{color: #1F4E79;}
+.header_mo .nav > ul > li > span > span:nth-child(2){position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.header_mo .nav > ul > li > span > span:nth-child(2) img{transform: rotate(0deg); transition: 0.5s ease-in-out;}
+.header_mo .nav > ul > li > span.active > span:nth-child(2) img{transform: rotate(-180deg);}  
+.header_mo .mo_sub_menu{display: none;}
+.header_mo .nav .mo_sub_menu a{display: block; text-decoration: none; cursor: pointer; line-height: 50px; font-size: 17px; font-weight: 500; color: #555555; text-decoration: none;}
+.header_mo .nav .rightBox{justify-content: space-between; padding-bottom: 30px; align-items: center; display: flex; flex-wrap: wrap; width: 100%; position: sticky; top: 100%;}
+.header_mo .nav .rightBox .langBox{display: flex; align-items: center;}
+.header_mo .nav .rightBox .langBox button{border-radius: 5px; padding: 5px 10px; border: none; background-color: transparent; font-size: 18px; color: #1F4E79;}
+.header_mo .nav .rightBox .langBox button:not(:first-child){margin-left: 15px;}
+.header_mo .nav .rightBox .langBox button.active{color: #fff; background-color: #1F4E79;}
+
+.header_mo .top.active{background-color: #fff;}
+.header_mo .top.active h1 a{background-image: url('../../assets/images/kopri_logo_active.png');}
+.header_mo .top.active .hamburger span{border-color: #1F4E79;}
+.header_mo.active .nav{background-color: #fff;}
+/* mobile_header Fin  */
+/* -----------------------------------header Fin---------------------------- */
+
+.topBtn{width: 60px; height: 60px; position: absolute; right: 0; top: -35px; border: none; background-color: #C22C02; border-radius: 0 0 5px 5px;}
+.topBtn:after{content: ''; display: block; position: absolute; background: url('../../assets/images/topBtn.png') center / contain no-repeat; width: 13px; height: 17px; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+footer{background-color: #051729; padding: 35px 0;}
+footer > div{position: relative;}
+footer > div > div:nth-of-type(1){margin-bottom: 35px; max-width: 94px;}
+footer > div > div:nth-of-type(1) a{display: block; background: url('../../assets/images/footer_logo.png') center / contain no-repeat; width: 100%; height: 40px;}
+footer > div > div:nth-of-type(2){margin-bottom: 85px;}
+footer > div > div:nth-of-type(2) p{color: #fff; font-size: 16px; font-weight: 300; line-height: 23px;}
+footer > div > div:nth-of-type(2) p span{font-size: 16px; font-weight: 500; line-height: 23px; opacity: 0.65; margin-right: 10px;}
+footer > div > div:nth-of-type(2) > p{margin-bottom: 10px;}
+footer > div > div:nth-of-type(2) > div{display: flex;}
+footer > div > div:nth-of-type(2) > div p:not(:first-child){position: relative; margin-left: 25px; padding-left: 25px;}
+footer > div > div:nth-of-type(2) > div p:not(:first-child):before{content: ''; position: absolute; width: 1px; height: 15px; background-color: rgba(255,255,255,0.4); left: 0; top: 50%; transform: translateY(-50%);}
+footer > div > div:nth-of-type(3){display: flex; align-items: flex-end; justify-content: space-between;}
+footer > div > div:nth-of-type(3) > p{font-size: 13px; font-weight: 400; line-height: 23px; color: #999999;}
+footer > div > div:nth-of-type(3) ul{display: flex;}
+footer > div > div:nth-of-type(3) ul li{cursor: pointer; position: relative; width: 50px; height: 50px; border-radius: 5px; background-color: rgba(0,0,0,0.5);}
+footer > div > div:nth-of-type(3) ul li:not(:first-child){margin-left: 10px;}
+footer > div > div:nth-of-type(3) ul li span{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: block; background-repeat: no-repeat; background-position: center; background-size: contain; opacity: 0.8;}
+footer > div > div:nth-of-type(3) ul li:hover span{opacity: 1;}
+footer > div > div:nth-of-type(3) ul li.youtube span{background-image: url('../../assets/images/footer_youtube.png'); width: 21px; height: 15px;}
+footer > div > div:nth-of-type(3) ul li.facebook span{background-image: url('../../assets/images/footer_facebook.png'); width: 8.5px; height: 16px;}
+footer > div > div:nth-of-type(3) ul li.twitter span{background-image: url('../../assets/images/footer_twitter.png'); width: 18px; height: 15px;}
+footer > div > div:nth-of-type(3) ul li.instagram span{background-image: url('../../assets/images/footer_instagram.png'); width: 18px; height: 18px;}
+footer > div > div:nth-of-type(3) ul li.blog span{background-image: url('../../assets/images/footer_blog.png'); width: 19.5px; height: 18px;}
+footer > div > div:nth-of-type(3) ul li.naver span{background-image: url('../../assets/images/footer_naver.png'); width: 16px; height: 18px;}
+
+
+@media (max-width:1600px){
+    .header_pc,
+    footer > div{width: 90%;}
+}
+
+@media (max-width:1024px){
+    .header_pc{display: none;}
+    .header_mo{display: block;}
+
+    footer > div > div:nth-of-type(3){flex-wrap: wrap; flex-direction: column-reverse;}
+    footer > div > div:nth-of-type(3) ul{width: 100%; margin-bottom: 30px;}
+}
+
+
+@media (max-width:768px){
+    .header_mo .top h1 a{min-width: 190px;}
+
+    footer > div > div:nth-of-type(2) > div{flex-wrap: wrap;}
+    footer > div > div:nth-of-type(2) p{width: 100%;}
+    footer > div > div:nth-of-type(2) > div p:not(:first-child):before{display: none;}
+    footer > div > div:nth-of-type(2) > div p:not(:first-child){margin-left: 0; padding-left: 0; margin-top: 10px;}
+    footer > div > div:nth-of-type(3) ul li{width: 35px; height: 35px;}
+}

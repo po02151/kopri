@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>STAR 시스템</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <link rel="stylesheet" href="../assets/css/import.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="active">
+            <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
+            <div class="header_pc">
+                <h1>
+                    <a href="../index.html">
+                        logo
+                    </a>
+                </h1>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../aboutStar/greeting.html">STAR소개</a>
+                                <ul class="sub_menu sub_menu_1">
+                                    <li>
+                                        <a href="../aboutStar/greeting.html">인사말</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/research_project.html">연구사업</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/organization.html">조직안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/directions.html">찾아오시는 길</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../starNews/sea_ice_information.html">STAR소식</a>
+                                <ul class="sub_menu sub_menu_2">
+                                    <li>
+                                        <a href="../starNews/sea_ice_information.html">남북극 해빙정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/science_base.html">과학기지현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/star_news.html">극지소식</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/polar_news.html">보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/thesis_performance.html">논문성과</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/photo_album.html">사진첩</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../remoteSensing/seaColor_remoteSensing.html">원격탐사</a>
+                                <ul class="sub_menu sub_menu_3">
+                                    <li>
+                                        <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../polarObservation/star_system.html">극지관측</a>
+                                <ul class="sub_menu sub_menu_4">
+                                    <li>
+                                        <a href="../polarObservation/star_system.html">STAR 시스템</a>
+                                    </li>
+                                    <li>
+                                        <a href="../polarObservation/drone.html">무인기</a>
+                                    </li>
+                                    <li>
+                                        <a href="../polarObservation/fieldObservationEquipment.html">현장관측장비</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../relatedSites/business_group.html">관련사이트</a>
+                                <ul class="sub_menu sub_menu_5">
+                                    <li>
+                                        <a href="../relatedSites/business_group.html">사업단</a>
+                                    </li>
+                                    <li>
+                                        <a href="../relatedSites/related_organizations.html">관련기관</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button></button>
+                            <div>
+                                <span>KR</span>
+                                <span>EN</span>
+                            </div>
+                        </div>
+                        <a href="../etc/siteMap.html" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- 모바일 헤더 : 스크롤 시 top이라는 클래스가 붙은 div에 active클래스 추가. -->
+            <!-- hamburger 버튼 클릭 시 header_mo에 active클래스 추가. -->
+            <div class="header_mo">
+                <div class="top active">
+                    <h1>
+                        <a href="../index.html">
+                            logo
+                        </a>
+                    </h1>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>
+                                <span>STAR소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../aboutStar/greeting.html">인사말</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/research_project.html">연구사업</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/organization.html">조직안내</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/directions.html">찾아오시는 길</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>STAR소식</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../starNews/sea_ice_information.html">남북극 해빙정보</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/science_base.html">과학기지현황</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/star_news.html">극지소식</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/polar_news.html">보도자료</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/thesis_performance.html">논문성과</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/photo_album.html">사진첩</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>원격탐사</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>극지관측</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../polarObservation/star_system.html">STAR 시스템</a>
+                                </li>
+                                <li>
+                                    <a href="../polarObservation/drone.html">무인기</a>
+                                </li>
+                                <li>
+                                    <a href="../polarObservation/fieldObservationEquipment.html">현장관측장비</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>관련사이트</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../relatedSites/business_group.html">사업단</a>
+                                </li>
+                                <li>
+                                    <a href="../relatedSites/related_organizations.html">관련기관</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button class="langBtn_ko active">KO</button>
+                            <button class="langBtn_en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header Fin -->
+
+        
+        <div class="subPage polarObservation star_system">
+            <div class="banner" style="background-image: url('../assets/images/polarObservation_banner.png');">
+                <div class="titleBox">
+                    <h2>
+                        <span>극지관측</span>
+                        상위메뉴 소개
+                    </h2>
+                </div>
+            </div>
+
+            <div class="lnb">
+                <div>
+                    <ul class="left">
+                        <li class="active">
+                            <a href="../polarObservation/star_system.html">STAR 시스템</a>
+                        </li>
+                        <li>
+                            <a href="../polarObservation/drone.html">무인기</a>
+                        </li>
+                        <li>
+                            <a href="../polarObservation/fieldObservationEquipment.html">현장관측장비</a>
+                        </li>
+                    </ul>
+                    <ul class="right">
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="../polarObservation/star_system.html">극지관측</a>
+                        </li>
+                        <li>
+                            <a href="../polarObservation/star_system.html">STAR 시스템</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="section_1">
+                <h3>
+                    <span>STAR 시스템</span>
+                    다양한 극지 정보를 제공하는 국내 유일의 극지 위성정보 시스템입니다.
+                </h3>
+
+                <div class="contentWrap">
+                    <p class="red">* STAR : Satellite Remote Sensing Team for the Arctic & Antarctic Research</p>
+                    <p>
+                        ‘극지 위성자료 수집 및 모니터링 시스템’은 극지 연구에 필요한 국내·외 위성영상을 자동으로 수집·처리하고, 오픈소스 GIS 기반의 효율적인 자료검색 및 가시화 기능을
+                        제공하는 극지 위성자료 모니터링을 위한 시스템
+                    </p>
+                    <div class="imgBox">
+                        <img src="../assets/images/star_system.png" alt="STAR 시스템">
+                    </div>
+
+                    <dl>
+                        <dt class="check_square">수집 데이터</dt>
+                        <dd class="listStyle">KOMPSAT(아리랑) 1, 2, 3, 3A, 5호 위성영상 (한국, 한국우주연구원)</dd>
+                        <dd class="listStyle">Sentinel 1, 2호 위성영상 (유럽, European Space Agency)</dd>
+                        <dd class="listStyle">S-NPP VIIRS 위성영상 (미국, National Oceanic and Atmospheric Administration)</dd>
+                        <dd class="listStyle">Landsat-8 위성영상 (미국, U.S. Geological Survey)</dd>
+                        <dd class="listStyle">SSMI/S 25Km 해상도 해빙농도 영상 (미국, National Snow and Ice Data Center)</dd>
+                    </dl>
+                    <dl>
+                        <dt class="check_square">시스템 구성</dt>
+                        <dd class="listStyle">위성영상 및 해빙농도 자료 자동 수집 및 처리 모듈</dd>
+                        <dd class="listStyle">아카이브 데이터 관리를 위한 메타데이터 처리 모듈</dd>
+                        <dd class="listStyle">웹 & GIS 기반 데이터 검색 및 표출 서비스 모듈</dd>
+                    </dl>
+                    <dl>
+                        <dt class="check_square">서비스 운영</dt>
+                        <dd class="listStyle">2017년부터 2019년까지 3년에 걸쳐 단계별로 개발을 진행하고 있으며, 2019년 말부터 외부 이용자에게도 서비스를 오픈할 예정임</dd>
+                    </dl>
+
+                    <div class="tabBtnBox">
+                        <button class="tabBtn_1 active">서비스와 소프트웨어 구성도</button>
+                        <button class="tabBtn_2">목표시스템 및 업무 흐름도</button>
+                    </div>
+
+                    <div class="tabContentBox">
+                        <div class="tabContent_1 active">
+                            <div class="imgBox">
+                                <span>자세히 보기</span>
+                                <img src="../assets/images/star_system_tab1_1.png" alt="서비스와 소프트웨어 구성도">
+                            </div>
+                            <span class="check_square">STAR에서 제공하는 위성영상 예시</span>
+                            <div class="imgWrap">
+                                <div class="imgBox">
+                                    <img src="../assets/images/star_system_tab1_2.png" alt="STAR에서 제공하는 위성영상 예시">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="../assets/images/star_system_tab1_3.png" alt="STAR에서 제공하는 위성영상 예시">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="../assets/images/star_system_tab1_4.png" alt="STAR에서 제공하는 위성영상 예시">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="../assets/images/star_system_tab1_5.png" alt="STAR에서 제공하는 위성영상 예시">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 서비스와 소프트웨어 구성도 Fin -->
+
+                        <div class="tabContent_2">
+                            <div class="imgBox">
+                                <span>자세히 보기</span>
+                                <img src="../assets/images/star_system_tab2_1.png" alt="서비스와 소프트웨어 구성도">
+                            </div>
+                            <span class="check_square">STAR에서 제공하는 위성영상 예시</span>
+                            <div class="imgWrap">
+                                <div class="imgBox">
+                                    <img src="../assets/images/star_system_tab1_2.png" alt="STAR에서 제공하는 위성영상 예시">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="../assets/images/star_system_tab1_3.png" alt="STAR에서 제공하는 위성영상 예시">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="../assets/images/star_system_tab1_4.png" alt="STAR에서 제공하는 위성영상 예시">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="../assets/images/star_system_tab1_5.png" alt="STAR에서 제공하는 위성영상 예시">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 목표시스템 및 업무 흐름도 Fin -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- content Fin -->
+
+        
+        <footer>
+            <div>
+                <button class="topBtn"></button>
+                <div>
+                    <a href="../index.html"></a>
+                </div>
+                <div>
+                    <p>
+                        <span>ADD</span>
+                        인천광역시 연수구 송도미래로 26 (송도동 213-3) 극지연구소
+                    </p>
+                    <div>
+                        <p>
+                            <span>TEL</span>
+                            032-760-5380
+                        </p>
+                        <p>
+                            <span>E-mail</span>
+                            star@kopri.re.kr
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p>COPYRIGHT (C) POLAR REMOTE SENSING ALL RIGHT RESERVED</p>
+                    <ul>
+                        <li class="youtube">
+                            <span></span>
+                        </li>
+                        <li class="facebook">
+                            <span></span>
+                        </li>
+                        <li class="twitter">
+                            <span></span>
+                        </li>
+                        <li class="instagram">
+                            <span></span>
+                        </li>
+                        <li class="blog">
+                            <span></span>
+                        </li>
+                        <li class="naver">
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

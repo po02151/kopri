@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>마이크로파 원격탐사</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <link rel="stylesheet" href="../assets/css/import.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="active">
+            <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
+            <div class="header_pc">
+                <h1>
+                    <a href="../index.html">
+                        logo
+                    </a>
+                </h1>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../aboutStar/greeting.html">STAR소개</a>
+                                <ul class="sub_menu sub_menu_1">
+                                    <li>
+                                        <a href="../aboutStar/greeting.html">인사말</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/research_project.html">연구사업</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/organization.html">조직안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/directions.html">찾아오시는 길</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../starNews/sea_ice_information.html">STAR소식</a>
+                                <ul class="sub_menu sub_menu_2">
+                                    <li>
+                                        <a href="../starNews/sea_ice_information.html">남북극 해빙정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/science_base.html">과학기지현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/star_news.html">극지소식</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/polar_news.html">보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/thesis_performance.html">논문성과</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/photo_album.html">사진첩</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../remoteSensing/seaColor_remoteSensing.html">원격탐사</a>
+                                <ul class="sub_menu sub_menu_3">
+                                    <li>
+                                        <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../polarObservation/star_system.html">극지관측</a>
+                                <ul class="sub_menu sub_menu_4">
+                                    <li>
+                                        <a href="../polarObservation/star_system.html">STAR 시스템</a>
+                                    </li>
+                                    <li>
+                                        <a href="../polarObservation/drone.html">무인기</a>
+                                    </li>
+                                    <li>
+                                        <a href="../polarObservation/fieldObservationEquipment.html">현장관측장비</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../relatedSites/business_group.html">관련사이트</a>
+                                <ul class="sub_menu sub_menu_5">
+                                    <li>
+                                        <a href="../relatedSites/business_group.html">사업단</a>
+                                    </li>
+                                    <li>
+                                        <a href="../relatedSites/related_organizations.html">관련기관</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button></button>
+                            <div>
+                                <span>KR</span>
+                                <span>EN</span>
+                            </div>
+                        </div>
+                        <a href="../etc/siteMap.html" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- 모바일 헤더 : 스크롤 시 top이라는 클래스가 붙은 div에 active클래스 추가. -->
+            <!-- hamburger 버튼 클릭 시 header_mo에 active클래스 추가. -->
+            <div class="header_mo">
+                <div class="top active">
+                    <h1>
+                        <a href="../index.html">
+                            logo
+                        </a>
+                    </h1>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>
+                                <span>STAR소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../aboutStar/greeting.html">인사말</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/research_project.html">연구사업</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/organization.html">조직안내</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/directions.html">찾아오시는 길</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>STAR소식</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../starNews/sea_ice_information.html">남북극 해빙정보</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/science_base.html">과학기지현황</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/star_news.html">극지소식</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/polar_news.html">보도자료</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/thesis_performance.html">논문성과</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/photo_album.html">사진첩</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>원격탐사</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>극지관측</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../polarObservation/star_system.html">STAR 시스템</a>
+                                </li>
+                                <li>
+                                    <a href="../polarObservation/drone.html">무인기</a>
+                                </li>
+                                <li>
+                                    <a href="../polarObservation/fieldObservationEquipment.html">현장관측장비</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>관련사이트</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../relatedSites/business_group.html">사업단</a>
+                                </li>
+                                <li>
+                                    <a href="../relatedSites/related_organizations.html">관련기관</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button class="langBtn_ko active">KO</button>
+                            <button class="langBtn_en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header Fin -->
+
+        
+        <div class="subPage remoteSensing microwave_remoteSensing">
+            <div class="banner" style="background-image: url('../assets/images/remoteSensing_banner.png');">
+                <div class="titleBox">
+                    <h2>
+                        <span>원격탐사</span>
+                        상위메뉴 소개
+                    </h2>
+                </div>
+            </div>
+
+            <div class="lnb">
+                <div>
+                    <ul class="left">
+                        <li>
+                            <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                        </li>
+                        <li>
+                            <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                        </li>
+                        <li class="active">
+                            <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                        </li>
+                        <li>
+                            <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                        </li>
+                    </ul>
+                    <ul class="right">
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="../remoteSensing/seaColor_remoteSensing.html">원격탐사</a>
+                        </li>
+                        <li>
+                            <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="section_1">
+                <h3>
+                    <span>마이크로파 원격탐사</span>
+                    기상상태 및 태양의 일조 조건에 영향을 거의 받지 않는 탐사기법입니다.
+                </h3>
+
+                <div class="contentWrap">
+                    <div class="tabBtnBox">
+                        <button class="tabBtn_1 active">정의</button>
+                        <button class="tabBtn_2">활용사례</button>
+                    </div>
+
+                    <div class="tabContentBox">
+                        <div class="tabContent_1 active">
+                            <ul>
+                                <li class="listStyle">마이크로파 대역(주파수 0.3-300 GHz 또는 파장 1mm-1m) 전자기파의 산란 및 복사 특성을 관측하여 관측 대상의 물리적 정보를 획득하는 원격탐사 기법</li>
+                                <li class="listStyle">구름 등 기상상태 및 태양의 일조조건에 거의 영향을 받지 않고, 고품질의 영상 획득이 가능한 전천후 원격탐사 기법</li>
+                                <li class="listStyle">관측대상에 따른 주파수 특성, 편파특성, 후방산란특성 및 도플러 효과 등의 측정을 통해 광학 센서로는 관측이 어려운 물리적 정보의 취득이 가능</li>
+                                <li class="listStyle">정보를 취득하는 방식에 따라 수동 마이크로파 원격탐사와 능동 마이크로파 원격탐사로 구분</li>
+                            </ul>
+
+                            <div class="listWrap">
+                                <dl>
+                                    <dt class="check_square">수동 (Passive) 마이크로파 원격탐사</dt>
+                                    <dd class="listStyle">관측 대상의 마이크로파 복사특성을 관측하는 원격탐사 기법</dd>
+                                    <dd class="listStyle">
+                                        센서가 스스로 전자기파를 송출하지 않고, 마이크로파 대역에서 자연 복사된 에너지를
+                                        관측하기 때문에 수동 마이크로파 원격탐사라 함.
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt class="check_square">수동 (Passive) 마이크로파 원격탐사</dt>
+                                    <dd class="listStyle">센서가 마이크로파를 직접 송출한 후, 산란되어 돌아오는 신호를 관측하는 원격탐사 기법</dd>
+                                    <dd class="listStyle">센서 스스로 마이크로파의 송수신을 담당하므로 능동 마이크로파 원격탐사라 함</dd>
+                                </dl>
+                            </div>
+
+                            <h4>마이크로파 원격탐사 센서 종류</h4>
+                            <dl class="sensor1">
+                                <dt class="listNumb">영상레이더(SYNTHETIC APERTURE RADAR, SAR)</dt>
+                                <dd class="listStyle">탑재체의 움직임으로 얻어지는 송신신호 위상의 연속적 변화를 이용하여 각 안테나 위치에서 획득된 신호들을 조합함으로써 고해상도의 영상을 합성</dd>
+                                <dd class="listStyle">센서와 관측 대상 사이의 거리에 관계없이 고해상도의 영상 획득이 가능</dd>
+                                <dd class="listStyle">
+                                    마이크로파 산란특성 분석을 통해 해빙 유형을 분류하고 다중 SAR 영상의 간섭위상차를 이용하여 빙하의 흐름속도를 관측하는데 사용되는 등 극지과학 전 분야에서 널리 이용되고 있는
+                                    대표적인 능동 마이크로파 센서
+                                </dd>
+                            </dl>
+
+                            <div class="dataWrap">
+                                <div class="imgWrap">
+                                    <div class="imgBox">
+                                        <div class="dataNumb">
+                                            <span>자료 1</span>
+                                        </div>
+                                        <img src="../assets/images/microwave_remoteSensing_tab1_1.png" alt="영상 레이더">
+                                    </div>
+                                    <div class="imgBox">
+                                        <div class="dataNumb">
+                                            <span>자료 2</span>
+                                        </div>
+                                        <img src="../assets/images/microwave_remoteSensing_tab1_2.png" alt="영상 레이더">
+                                    </div>
+                                </div>
+
+                                <div class="txtBox">
+                                    <p>
+                                        <span>자료 1</span>
+                                        알래스카 북부 동토/해빙 지역에 대해 2018년 5월 4일과 6월 1일에 촬영된 아리랑 5호 SAR 영상으로부터 생성한 간섭위상 영상(interferogram)과 긴밀도 영상(coherence)
+                                    </p>
+                                    <p>
+                                        <span>자료 2</span>
+                                        아리랑 5호 SAR 영상으로 관측된 서남극 아문젠해 해빙과 남극 현장조사 임무 수행 중인 아라온호의 모습
+                                    </p>
+                                </div>
+                            </div>
+
+                            <dl class="sensor2">
+                                <dt class="listNumb">레이더 고도계 (Radar Altimeter)</dt>
+                                <dd class="listStyle">센서와 지표 사이의 마이크로파 이동거리를 관측하여 고도를 관측</dd>
+                                <dd class="listStyle">해수면과 해빙의 표면고도를 측정하여 해빙의 두께를 추정하거나, 빙상 및 빙붕의 지형 관측 및 두께 변화 추정에 이용되고 있음</dd>
+                            </dl>
+
+                            <dl class="sensor3">
+                                <dt class="listNumb">산란계 (Scatterometer)</dt>
+                                <dd class="listStyle">지표면으로 마이크로파를 송출하고, 산란되어 되돌아오는 마이크로파 신호를 관측</dd>
+                                <dd class="listStyle">해수 표면의 파고, 풍향, 풍속 측정 등에 사용되고 있으며, 빙체의 용융 및 동결 관측과 빙산의 추적에도 이용되고 있음</dd>
+                            </dl>
+
+                            <dl class="sensor4">
+                                <dt class="listNumb">수동 마이크로파 센서 (Passive Microwave Radiometer)</dt>
+                                <dd class="listStyle">다양한 마이크로파 주파수 대역의 채널을 통해 지표에서 복사되는 에너지(복사휘도)를 감지</dd>
+                                <dd class="listStyle">공간해상도는 낮으나 동시관측범위가 넓어 매일 전 북극 및 남극을 관측 가능하며, 해빙의 농도 및 이동벡터 추출에 이용되고 있음</dd>
+                            </dl>
+
+                            <div class="imgBox">
+                                <img src="../assets/images/microwave_remoteSensing_tab1_3.png" alt="영상 레이더">
+                                <p class="dataNumb">
+                                    <span>자료 3</span>
+                                    수동 마이크로파 센서로 관측된 북극의 해빙농도, 해빙두께, 해빙유형 (2018년 3월 1일 관측 자료)
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 정의 Fin -->
+
+                        <div class="tabContent_2">
+                            <div class="imgBox">
+                                <img src="../assets/images/microwave_remoteSensing_tab2_1.png" alt="마이크로파 원격탐사 활용사례">
+                                <p class="dataNumb">
+                                    <span>자료 1</span>
+                                    이중편파 SAR 영상의 표면 텍스쳐 특성을 이용한 해빙의 종류 구분 (Park et al., 2019)
+                                </p>
+                            </div>
+                            <div class="imgBox">
+                                <img src="../assets/images/microwave_remoteSensing_tab2_2.png" alt="마이크로파 원격탐사 활용사례">
+                                <p class="dataNumb">
+                                    <span>자료 2</span>
+                                    아리랑 5호 SAR 영상의 텍스처 정보와 기계학습(Random Forest) 기법의 융합을 통한 고정밀 북극 해빙탐지 지도(Ice/Water Map) 제작 (Han et al., 2017)
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 활용사례 Fin -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- content Fin -->
+
+        
+        <footer>
+            <div>
+                <button class="topBtn"></button>
+                <div>
+                    <a href="../index.html"></a>
+                </div>
+                <div>
+                    <p>
+                        <span>ADD</span>
+                        인천광역시 연수구 송도미래로 26 (송도동 213-3) 극지연구소
+                    </p>
+                    <div>
+                        <p>
+                            <span>TEL</span>
+                            032-760-5380
+                        </p>
+                        <p>
+                            <span>E-mail</span>
+                            star@kopri.re.kr
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p>COPYRIGHT (C) POLAR REMOTE SENSING ALL RIGHT RESERVED</p>
+                    <ul>
+                        <li class="youtube">
+                            <span></span>
+                        </li>
+                        <li class="facebook">
+                            <span></span>
+                        </li>
+                        <li class="twitter">
+                            <span></span>
+                        </li>
+                        <li class="instagram">
+                            <span></span>
+                        </li>
+                        <li class="blog">
+                            <span></span>
+                        </li>
+                        <li class="naver">
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>무인기 원격탐사</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <link rel="stylesheet" href="../assets/css/import.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="active">
+            <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
+            <div class="header_pc">
+                <h1>
+                    <a href="../index.html">
+                        logo
+                    </a>
+                </h1>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../aboutStar/greeting.html">STAR소개</a>
+                                <ul class="sub_menu sub_menu_1">
+                                    <li>
+                                        <a href="../aboutStar/greeting.html">인사말</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/research_project.html">연구사업</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/organization.html">조직안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/directions.html">찾아오시는 길</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../starNews/sea_ice_information.html">STAR소식</a>
+                                <ul class="sub_menu sub_menu_2">
+                                    <li>
+                                        <a href="../starNews/sea_ice_information.html">남북극 해빙정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/science_base.html">과학기지현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/star_news.html">극지소식</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/polar_news.html">보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/thesis_performance.html">논문성과</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/photo_album.html">사진첩</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../remoteSensing/seaColor_remoteSensing.html">원격탐사</a>
+                                <ul class="sub_menu sub_menu_3">
+                                    <li>
+                                        <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../polarObservation/star_system.html">극지관측</a>
+                                <ul class="sub_menu sub_menu_4">
+                                    <li>
+                                        <a href="../polarObservation/star_system.html">STAR 시스템</a>
+                                    </li>
+                                    <li>
+                                        <a href="../polarObservation/drone.html">무인기</a>
+                                    </li>
+                                    <li>
+                                        <a href="../polarObservation/fieldObservationEquipment.html">현장관측장비</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../relatedSites/business_group.html">관련사이트</a>
+                                <ul class="sub_menu sub_menu_5">
+                                    <li>
+                                        <a href="../relatedSites/business_group.html">사업단</a>
+                                    </li>
+                                    <li>
+                                        <a href="../relatedSites/related_organizations.html">관련기관</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button></button>
+                            <div>
+                                <span>KR</span>
+                                <span>EN</span>
+                            </div>
+                        </div>
+                        <a href="../etc/siteMap.html" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- 모바일 헤더 : 스크롤 시 top이라는 클래스가 붙은 div에 active클래스 추가. -->
+            <!-- hamburger 버튼 클릭 시 header_mo에 active클래스 추가. -->
+            <div class="header_mo">
+                <div class="top active">
+                    <h1>
+                        <a href="../index.html">
+                            logo
+                        </a>
+                    </h1>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>
+                                <span>STAR소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../aboutStar/greeting.html">인사말</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/research_project.html">연구사업</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/organization.html">조직안내</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/directions.html">찾아오시는 길</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>STAR소식</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../starNews/sea_ice_information.html">남북극 해빙정보</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/science_base.html">과학기지현황</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/star_news.html">극지소식</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/polar_news.html">보도자료</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/thesis_performance.html">논문성과</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/photo_album.html">사진첩</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>원격탐사</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>극지관측</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../polarObservation/star_system.html">STAR 시스템</a>
+                                </li>
+                                <li>
+                                    <a href="../polarObservation/drone.html">무인기</a>
+                                </li>
+                                <li>
+                                    <a href="../polarObservation/fieldObservationEquipment.html">현장관측장비</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>관련사이트</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../relatedSites/business_group.html">사업단</a>
+                                </li>
+                                <li>
+                                    <a href="../relatedSites/related_organizations.html">관련기관</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button class="langBtn_ko active">KO</button>
+                            <button class="langBtn_en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header Fin -->
+
+        
+        <div class="subPage remoteSensing drone_remoteSensing">
+            <div class="banner" style="background-image: url('../assets/images/remoteSensing_banner.png');">
+                <div class="titleBox">
+                    <h2>
+                        <span>원격탐사</span>
+                        상위메뉴 소개
+                    </h2>
+                </div>
+            </div>
+
+            <div class="lnb">
+                <div>
+                    <ul class="left">
+                        <li>
+                            <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                        </li>
+                        <li>
+                            <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                        </li>
+                        <li>
+                            <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                        </li>
+                        <li class="active">
+                            <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                        </li>
+                    </ul>
+                    <ul class="right">
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="../remoteSensing/seaColor_remoteSensing.html">원격탐사</a>
+                        </li>
+                        <li>
+                            <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="section_1">
+                <h3>
+                    <span>무인기 원격탐사</span>
+                    지상에서 원격 제어 또는 사전 입력된 비행계획을 통해 고해상도 자료 획득이 가능한 원격 탐사입니다.
+                </h3>
+
+                <div class="contentWrap">
+                    <div class="tabBtnBox">
+                        <button class="tabBtn_1 active">정의</button>
+                        <button class="tabBtn_2">활용사례</button>
+                    </div>
+
+                    <div class="tabContentBox">
+                        <div class="tabContent_1 active">
+                            <ul>
+                                <li class="listStyle">무인기(Unmanned Aerial Vehicle, UAV)는 지상에서 원격 제어 또는 사전 입력된 비행계획을 통해 수 mm에서 수십 cm의 고해상도 자료 획득이 가능한 원격탐사 플랫폼</li>
+                                <li class="listStyle">유인항공기 및 인공위성과 같은 기존 원격탐사 플랫폼들과 비교하여 운용이 쉽고 촬영시기 선정이 용이함</li>
+                                <li class="listStyle">무인기 획득 자료는 높은 공간해상도를 바탕으로 관심지역의 정밀분석 또는 인공위성 자료 검보정에 활용 가능</li>
+                                <li class="listStyle">무인기는 형태에 따라 고정익(fixed wing)과 회전익(rotary wing)으로 분류</li>
+                            </ul>
+
+                            <div>
+                                <span class="check_square">고정익 [ SenseFly eBee X ]</span>
+                                <div class="productInformationBox">
+                                    <div class="imgBox">
+                                        <img src="../assets/images/drone_remoteSensing_tab1_1.png" alt="고정익 [ SenseFly eBee X ]">
+                                    </div>
+                                    <div class="tableWrap"> 
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>장점</th>
+                                                    <td>
+                                                        <span class="listStyle">장거리, 장시간 임무수행 가능</span>
+                                                        <span class="listStyle">넓은 지역에 대한 자료 취득 용이</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>단점</th>
+                                                    <td>
+                                                        <span class="listStyle">이착륙을 위해 넓은 개활지 필요</span>
+                                                        <span class="listStyle">중대형 센서 탑재가 어려움</span>
+                                                        <span class="listStyle">공중정지비행(hovering) 불가능</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="check_square">회전익 [ DJI Matrice 600 Pro ]</span>
+                                <div class="productInformationBox">
+                                    <div class="imgBox">
+                                        <img src="../assets/images/drone_remoteSensing_tab1_2.png" alt="회전익 [ DJI Matrice 600 Pro ]">
+                                    </div>
+                                    <div class="tableWrap"> 
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>장점</th>
+                                                    <td>
+                                                        <span class="listStyle">수직 이착륙 및 공중정지비행 가능</span>
+                                                        <span class="listStyle">다양한 센서 탑재 가능</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>단점</th>
+                                                    <td>
+                                                        <span class="listStyle">짧은 비행시간으로 촬영 반경 제한적</span>
+                                                        <span class="listStyle">바람 영향에 민감</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <p class="listStyle">
+                                    탑재 센서로는 일반 광학카메라, 다중분광카메라, 초분광카메라, 열화상카메라, LiDAR(light detection and ranging), SAR(synthetic aperture radar) 등 기존 원격탐사 플랫폼에서
+                                    사용되던 대부분의 센서들이 사용 가능
+                                </p>
+                            </div>
+
+
+                        </div>
+                        <!-- 정의 Fin -->
+
+                        <div class="tabContent_2">
+                            <ul>
+                                <li class="listStyle">무인기는 최초 군사목적으로 활용되었으나 최근에는 물류, 시설물 관리, 감시/구조/수색 등 민간분야에서 폭넓게 사용되고 있으며, 연구분야에서도 지구환경 전반에 걸쳐 확대되고 있음</li>
+                                <li class="listStyle">특히, 극지의 경우에는 기후, 지질, 해양, 해빙/빙하, 동식물 생태 등 많은 분야에서 무인기 원격탐사 활용이 크게 늘고 있음</li>
+                            </ul>
+
+                            <div>
+                                <div>
+                                    <span class="check_square">세종기지 인근 무인기 운용</span>
+                                    <div class="imgBox">
+                                        <img src="../assets/images/drone_remoteSensing_tab2_1.png" alt="세종기지 인근 무인기 운용">
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="check_square">해빙캠프 무인기 운용</span>
+                                    <div class="imgBox">
+                                        <img src="../assets/images/drone_remoteSensing_tab2_2.png" alt="해빙캠프 무인기 운용">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="accordionBox">
+                                <li>
+                                    <div class="titleBox active">
+                                        <p>세종기지 주변 바톤반도 식생분포 조사</p>
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                    <div class="contentBox">
+                                        <div class="imgBox">
+                                            <img src="../assets/images/drone_remoteSensing_tab2_3.png" alt="북극 빙권 변화 파악을 위한 원격탐사 산출물 개발">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="titleBox">
+                                        <p>무인기를 활용한 아델리펭귄 둥지 공간분포 조사 (2017. 06 ~ 현재)</p>
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                    <div class="contentBox">
+                                        <div class="imgBox">
+                                            <img src="../assets/images/drone_remoteSensing_tab2_4.png" alt="무인기를 활용한 아델리펭귄 둥지 공간분포 조사 (2017. 06 ~ 현재)">
+                                        </div>
+                                        <div>
+                                            <span class="listStyle">아델리펭귄 둥지 모니터링을 위해 남극 로스해 Cape Hallett, Inexpressible Island 지역을 중심으로 무인기 영상을 취득하여 수치표고모델 및 모자이크 영상 제작</span>
+                                            <span class="listStyle">시기별 변화 양상을 파악하기 위해 여러 시기에 취득된 자료를 registration하여 비교 분석</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="titleBox">
+                                        <p>무인기 영상 활용 아델리펭귄 개체수 산정 방법 개발 (2017. 06 ~ 현재)</p>
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                    <div class="contentBox">
+                                        <div>
+                                            <span class="listStyle">무인기 영상으로 제작한 모자이크 영상을 이용하여 아델리펭귄의 개체수를 자동으로 산정할 수 있는 합성곱 신경망 기반 방법 개발</span>
+                                            <span class="listStyle">펭귄을 탐지함에 있어 개체와 둥지를 모두 고려하고, 또한 이동 개체는 탐지 결과에서 제외시킬 수 있도록 함으로써 높은 수준의 탐지 정확도 달성</span>
+                                        </div>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/drone_remoteSensing_tab2_5.png" alt="무인기 영상 활용 아델리펭귄 개체수 산정 방법 개발 (2017. 06 ~ 현재)">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="titleBox">
+                                        <p>무인기 영상을 이용한 고품질 해빙표면모델 생성 방법 개발 (2017. 09 ~ 현재)</p>
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </div>
+                                    <div class="contentBox">
+                                        <div>
+                                            <span class="listStyle">고품질의 해빙표면모델을 얻기 위해 요구되는 주요 고려사항을 도출하고 이를 통해 효과적으로 해빙표면모델을 생성할 수 있는 방법 개발</span>
+                                            <span class="listStyle">
+                                                신뢰성 있는 결과를 얻기 위해서는 영상정합 과정에 있어 해빙에 최적화된 정합비용과 탐색창, 그리고 정합의 불확실성 등이 반영되어야 함을 확인
+                                                <span>Kim, J., Hyun, C., Han, H., and Kim, H., 2019, Evaluation of matching costs for high-quality</span>
+                                                <span>sea-ice surface reconstruction from aerial images, Remote Sensing, 11(9):1055</span>
+                                            </span>
+                                            <span class="listStyle">도출된 고려사항들을 반영하여 해빙표면모델 생성 방법을 수립한 결과, 기존 방법과 비교하여 크게 향상된 결과 산출이 가능함을 확인</span>
+                                        </div>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/drone_remoteSensing_tab2_6.png" alt="무인기 영상을 이용한 고품질 해빙표면모델 생성 방법 개발 (2017. 09 ~ 현재)">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 활용사례 Fin -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- content Fin -->
+
+        
+        <footer>
+            <div>
+                <button class="topBtn"></button>
+                <div>
+                    <a href="../index.html"></a>
+                </div>
+                <div>
+                    <p>
+                        <span>ADD</span>
+                        인천광역시 연수구 송도미래로 26 (송도동 213-3) 극지연구소
+                    </p>
+                    <div>
+                        <p>
+                            <span>TEL</span>
+                            032-760-5380
+                        </p>
+                        <p>
+                            <span>E-mail</span>
+                            star@kopri.re.kr
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p>COPYRIGHT (C) POLAR REMOTE SENSING ALL RIGHT RESERVED</p>
+                    <ul>
+                        <li class="youtube">
+                            <span></span>
+                        </li>
+                        <li class="facebook">
+                            <span></span>
+                        </li>
+                        <li class="twitter">
+                            <span></span>
+                        </li>
+                        <li class="instagram">
+                            <span></span>
+                        </li>
+                        <li class="blog">
+                            <span></span>
+                        </li>
+                        <li class="naver">
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

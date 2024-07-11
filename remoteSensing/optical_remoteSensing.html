@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>광학 원격탐사</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <link rel="stylesheet" href="../assets/css/import.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="active">
+            <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
+            <div class="header_pc">
+                <h1>
+                    <a href="../index.html">
+                        logo
+                    </a>
+                </h1>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../aboutStar/greeting.html">STAR소개</a>
+                                <ul class="sub_menu sub_menu_1">
+                                    <li>
+                                        <a href="../aboutStar/greeting.html">인사말</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/research_project.html">연구사업</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/organization.html">조직안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutStar/directions.html">찾아오시는 길</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../starNews/sea_ice_information.html">STAR소식</a>
+                                <ul class="sub_menu sub_menu_2">
+                                    <li>
+                                        <a href="../starNews/sea_ice_information.html">남북극 해빙정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/science_base.html">과학기지현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/star_news.html">극지소식</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/polar_news.html">보도자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/thesis_performance.html">논문성과</a>
+                                    </li>
+                                    <li>
+                                        <a href="../starNews/photo_album.html">사진첩</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../remoteSensing/seaColor_remoteSensing.html">원격탐사</a>
+                                <ul class="sub_menu sub_menu_3">
+                                    <li>
+                                        <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                                    </li>
+                                    <li>
+                                        <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../polarObservation/star_system.html">극지관측</a>
+                                <ul class="sub_menu sub_menu_4">
+                                    <li>
+                                        <a href="../polarObservation/star_system.html">STAR 시스템</a>
+                                    </li>
+                                    <li>
+                                        <a href="../polarObservation/drone.html">무인기</a>
+                                    </li>
+                                    <li>
+                                        <a href="../polarObservation/fieldObservationEquipment.html">현장관측장비</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../relatedSites/business_group.html">관련사이트</a>
+                                <ul class="sub_menu sub_menu_5">
+                                    <li>
+                                        <a href="../relatedSites/business_group.html">사업단</a>
+                                    </li>
+                                    <li>
+                                        <a href="../relatedSites/related_organizations.html">관련기관</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button></button>
+                            <div>
+                                <span>KR</span>
+                                <span>EN</span>
+                            </div>
+                        </div>
+                        <a href="../etc/siteMap.html" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- 모바일 헤더 : 스크롤 시 top이라는 클래스가 붙은 div에 active클래스 추가. -->
+            <!-- hamburger 버튼 클릭 시 header_mo에 active클래스 추가. -->
+            <div class="header_mo">
+                <div class="top active">
+                    <h1>
+                        <a href="../index.html">
+                            logo
+                        </a>
+                    </h1>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>
+                                <span>STAR소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../aboutStar/greeting.html">인사말</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/research_project.html">연구사업</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/organization.html">조직안내</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutStar/directions.html">찾아오시는 길</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>STAR소식</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../starNews/sea_ice_information.html">남북극 해빙정보</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/science_base.html">과학기지현황</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/star_news.html">극지소식</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/polar_news.html">보도자료</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/thesis_performance.html">논문성과</a>
+                                </li>
+                                <li>
+                                    <a href="../starNews/photo_album.html">사진첩</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>원격탐사</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                                </li>
+                                <li>
+                                    <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>극지관측</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../polarObservation/star_system.html">STAR 시스템</a>
+                                </li>
+                                <li>
+                                    <a href="../polarObservation/drone.html">무인기</a>
+                                </li>
+                                <li>
+                                    <a href="../polarObservation/fieldObservationEquipment.html">현장관측장비</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>관련사이트</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../relatedSites/business_group.html">사업단</a>
+                                </li>
+                                <li>
+                                    <a href="../relatedSites/related_organizations.html">관련기관</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button class="langBtn_ko active">KO</button>
+                            <button class="langBtn_en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header Fin -->
+
+        
+        <div class="subPage remoteSensing optical_remoteSensing">
+            <div class="banner" style="background-image: url('../assets/images/remoteSensing_banner.png');">
+                <div class="titleBox">
+                    <h2>
+                        <span>원격탐사</span>
+                        상위메뉴 소개
+                    </h2>
+                </div>
+            </div>
+
+            <div class="lnb">
+                <div>
+                    <ul class="left">
+                        <li>
+                            <a href="../remoteSensing/seaColor_remoteSensing.html">해색 원격탐사</a>
+                        </li>
+                        <li class="active">
+                            <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                        </li>
+                        <li>
+                            <a href="../remoteSensing/microwave_remoteSensing.html">마이크로파 원격탐사</a>
+                        </li>
+                        <li>
+                            <a href="../remoteSensing/drone_remoteSensing.html">무인기 원격탐사</a>
+                        </li>
+                    </ul>
+                    <ul class="right">
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="../remoteSensing/seaColor_remoteSensing.html">원격탐사</a>
+                        </li>
+                        <li>
+                            <a href="../remoteSensing/optical_remoteSensing.html">광학 원격탐사</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="section_1">
+                <h3>
+                    <span>광학 원격탐사</span>
+                    가시광선, 근적외선과 단파 적외를 활용한 원격탐사 기법입니다.
+                </h3>
+
+                <div class="contentWrap">
+                    <div class="tabBtnBox">
+                        <button class="tabBtn_1 active">정의</button>
+                        <button class="tabBtn_2">활용사례</button>
+                    </div>
+
+                    <div class="tabContentBox">
+                        <div class="tabContent_1 active">
+                            <p>
+                                광학(optical)은 자외선(ultraviolet), 가시광선(visible light), 일부 적외선(infrared light)을 포함한 전자기파 파장 범위를 의미하며, 자외선은 지구 대기를 통과하지 못하므로 위성 기반 “광학
+                                원격탐사”는 가시광선, 근적외선(nearinfrared, 0.75~1.4 μm)과 단파 적외(short-wavelength infrared, 1.4~3 μm)를 활용한 원격탐사 기법을 의미함
+                            </p>
+                            <div class="imgBox">
+                                <img src="../assets/images/optical_remoteSensing_tab1.png" alt="광학 원격탐사">
+                            </div>
+                            <ul>
+                                <li class="listStyle">지구로 태양광이 들어오면, 일부 에너지는 흡수되고, 나머지 에너지는 표면에서 다양한 방향으로 산란 되는데, 광학 센서를 통해 특정 방향으로 산란된 복사 에너지량을 측정</li>
+                                <li class="listStyle">산란된 복사 에너지량은 입사광 세기에 의존하므로, 입사광 복사 센서로 측정한 산란 복사 에너지 량의 비율인 반사도(Reflectance)를 연구에 사용함</li>
+                                <li class="listStyle">반사도는 파장, 입사광의 입사 각도, 센서의 측정 각도, 산란체의 특성의 함수</li>
+                                <li class="listStyle">각각의 물질은 파장에 따른 고유한 반사 특성을 보이는데, 측정하는 대상에 따라 민감하게 반응하는 파장을 선택하면 물질의 특성을 파악하는데 유리</li>
+                            </ul>
+                        </div>
+                        <!-- 정의 Fin -->
+
+                        <div class="tabContent_2">
+                            <span class="check_square">활영기술</span>
+                            
+                            <div class="txtBox">
+                                <p class="listStyle">
+                                    밴드를 이용한 광학 원격탐사 영상 반사도의 공간 분포를 파악하는데 유리함. 지표 유형(land cover), 육상과 해상의 식생량 추정, 대기 중의 에어로졸, 구름 등에 분포 추정 등 해양, 기상,
+                                    공간정보, 농업, 산림, 극지와 같은 다양한 분야에서 활용
+                                </p>
+                                <p class="listStyle">마이크로파나 장파장의 적외선을 이용한 원격탐사보다 높은 공간해상도의 영상을 얻을 수 있으나, 구름이나 기상 조건에 영향을 많이 받는 점이 단점</p>
+                                <p class="listStyle">
+                                    적색, 녹색, 파란색 밴드의 반사도를 조합하면 인간이 보는 색상과 같아 직관적인 영상 해석이 가능한 true color RGB 합성 영상을 얻을 수 있음. 적색, 녹색, 파란색이 아닌 다른 밴드를 조합한
+                                    경우는 False-color RGB 합성 영상이라 부름
+                                </p>
+                            </div>
+
+                            <div class="imgBox">
+                                <img src="../assets/images/optical_remoteSensing_tab2.png" alt="현장자료기반 경험적 해색 알고리즘 개발">
+                                <p class="dataNumb">
+                                    <span>자료 1</span>
+                                    Landsat 8 위성을 활용한 true-color RGB 합성 영상의 예시
+                                </p>
+                            </div>
+                            <div class="txtBox">
+                                <p class="listStyle">
+                                    반사도의 공간 분포 보다는 파장에 따른 반사도 차이를 더 자세히 볼 수 있는 분광계(spectrometer)를 이용하면 파장에 따라 반사도의 차이를 연속적으로 측정하여 파장에 따른 물질의 반사도
+                                    변화를 알 수 있음
+                                </p>
+                                <p class="listStyle">
+                                    최근에는 파장에 따른 반사도차이와 공간 분포 특성을 모두 얻을 수 있는 초분광영상기(hyperspectral imager)가 도입되면서 더 입체적인 물질의 특성 파악이 가능해 짐. 또한 기존의 광학
+                                    센서를 드론이나 무인기 운영 기술과 접목해 광학 원격 탐사 운용 플랫폼이 확장되는 추세로 앞으로의 활용 기술 개발과 그 결과가 기대됨.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 활용사례 Fin -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- content Fin -->
+
+        
+        <footer>
+            <div>
+                <button class="topBtn"></button>
+                <div>
+                    <a href="../index.html"></a>
+                </div>
+                <div>
+                    <p>
+                        <span>ADD</span>
+                        인천광역시 연수구 송도미래로 26 (송도동 213-3) 극지연구소
+                    </p>
+                    <div>
+                        <p>
+                            <span>TEL</span>
+                            032-760-5380
+                        </p>
+                        <p>
+                            <span>E-mail</span>
+                            star@kopri.re.kr
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p>COPYRIGHT (C) POLAR REMOTE SENSING ALL RIGHT RESERVED</p>
+                    <ul>
+                        <li class="youtube">
+                            <span></span>
+                        </li>
+                        <li class="facebook">
+                            <span></span>
+                        </li>
+                        <li class="twitter">
+                            <span></span>
+                        </li>
+                        <li class="instagram">
+                            <span></span>
+                        </li>
+                        <li class="blog">
+                            <span></span>
+                        </li>
+                        <li class="naver">
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
